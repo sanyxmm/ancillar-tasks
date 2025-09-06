@@ -24,17 +24,14 @@ export default function Lottery() {
       <h1 className="title">Lottery App</h1>
 
       <div className="container">
-        {numbers.map((num, i) => (
-          <div key={i} className="box">
-            {num}
-          </div>
-        ))}
+   
+          <div className="box">  {numbers[0]} </div>
+          <div className="box">  {numbers[1]} </div>
+          <div className="box">  {numbers[2]} </div>
+     
       </div>
 
-      <button onClick={create} className="btn">
-        Lottery
-      </button>
-
+      <button onClick={create} className="btn"> Lottery</button>
       {result && <p className="result">{result}</p>}
     </div>
   );
